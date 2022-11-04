@@ -92,3 +92,38 @@ header {
 
     color: #e1e1e6;
 }
+
+/* Animation */
+.card h2:hover,
+.card ul li strong:hover,
+.card ul li img:hover {
+  transform: scale(1.1);
+}
+
+.card h2,
+.card ul li strong:hover,
+.card ul li img:hover {
+  transition: transform 0.3s;
+}
+
+.card {
+  opacity: 0;
+  animation: appear 1s forwards;
+}
+
+.card:nth-child(2) {
+  animation-delay: .2s;
+}
+.card:nth-child(3) {
+  animation-delay: .4s;
+}
+
+@keyframes appear {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
