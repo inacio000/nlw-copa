@@ -7,6 +7,7 @@ function createGame(player1, hour, player2) {
     </li>
   `
 }
+
 let delay = -0.3;
 function createCard(date, day, group, games) {
   delay = delay + 0.3;

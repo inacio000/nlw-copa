@@ -105,7 +105,7 @@ header {
   justify-content: space-between;
 }
 
-.card ul li + li {
+.card ul li + li {   /* Caso tenha main uma li */
   padding-top: 24px;
   border-top: 1px solid #323238;
 }
@@ -125,10 +125,10 @@ header {
   transform: scale(1.1);
 }
 
-.card h2,
+.card h2:hover,
 .card ul li strong:hover,
 .card ul li img:hover {
-  transition: transform 0.3s;
+  transition: transform 0.5s;
 }
 
 .card {
